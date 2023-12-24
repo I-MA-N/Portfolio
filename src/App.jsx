@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 import Context from "./components/Context";
 import Particle from "./components/Particle";
 import ThemeBtn from "./components/ThemeBtn";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 const ThemeContext = createContext(true);
 
