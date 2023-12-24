@@ -72,7 +72,7 @@ const Projects = () => {
                               {
                                  project.isHot &&
                                  <div className="bg-slate-100 p-1 text-orange-400 rounded-full absolute top-3 left-3 cursor-pointer">
-                                    <img src="/src/assets/icons/fire.gif" className="block group-hover:block w-6 sm:w-[30px] rounded-full cursor-pointer" />
+                                    <img src="./icons/fire.gif" className="block group-hover:block w-6 sm:w-[30px] rounded-full cursor-pointer" />
                                  </div>
                               }
 
