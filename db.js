@@ -4,24 +4,24 @@ const sections = [
         "name": "Intro",
         "href": "#intro",
         "color": "#fb923c",
-        "icon_light": "/src/assets/icons/header-icons/icon-home_light.svg",
-        "icon_dark": "/src/assets/icons/header-icons/icon-home_dark.svg"
+        "icon_light": "./src/assets/icons/header-icons/icon-home_light.svg",
+        "icon_dark": "./src/assets/icons/header-icons/icon-home_dark.svg"
     },
     {
         "id": 2,
         "name": "Skills",
         "href": "#skills",
         "color": "#22c55e",
-        "icon_light": "/src/assets/icons/header-icons/icon-bulb_light.svg",
-        "icon_dark": "/src/assets/icons/header-icons/icon-bulb_dark.svg"
+        "icon_light": "./src/assets/icons/header-icons/icon-bulb_light.svg",
+        "icon_dark": "./src/assets/icons/header-icons/icon-bulb_dark.svg"
     },
     {
         "id": 3,
         "name": "Projects",
         "href": "#projects",
         "color": "#0ea5e9",
-        "icon_light": "/src/assets/icons/header-icons/icon-case_light.svg",
-        "icon_dark": "/src/assets/icons/header-icons/icon-case_dark.svg"
+        "icon_light": "src/assets/icons/header-icons/icon-case_light.svg",
+        "icon_dark": "src/assets/icons/header-icons/icon-case_dark.svg"
     },
     {
         "id": 4,
