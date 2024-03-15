@@ -2,10 +2,10 @@
 🎉
 Now, publishing my professional and official website to introduce myself. Contains my personal info, skills, work samples and ways to contact me...
 ## Features 
-- Beautiful and attractive background, hover to grab all points to cursor! 🔥
+- Beautiful and attractive background, hover to grab all points to your cursor! 🔥
 - Dark/Light mode 🔥
 - Customized cursor, also pointer cursor 🔥
-- Diffrent header, showing webpage flow 🔥
+- Different header, showing webpage flow 🔥
 - Detailed and accurate design 🔥
 ## Using
 - Vite (local development server) ⚙
