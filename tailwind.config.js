@@ -29,7 +29,7 @@ export default {
         '26': '6.5rem'
       },
       cursor: {
-        'pointer': 'url("../public/images/cursor-pointer2.png"), auto'
+        'pointer': 'url("/images/cursor-pointer2.png"), auto'
       }
     },
 

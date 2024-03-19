@@ -13,6 +13,21 @@
       cursor: none;
    }
 
+   ::selection {
+      @apply text-gray-100 bg-black;
+   }
+   ::-moz-selection {
+      @apply text-gray-100 bg-black;
+   }
+
+   .dark ::selection {
+      @apply text-black bg-gray-100;
+   }
+   .dark ::-moz-selection {
+      @apply text-black bg-gray-100;
+   }
+
+
    body {
       @apply font-Ubuntu relative;
    }

@@ -175,13 +175,6 @@ const socials = [
     },
     {
         id: 3,
-        link: "https://www.instagram.com/imn_mos",
-        text: "imn_mos",
-        image_light: "./icons/social-media/icon-instagram_light.png",
-        image_dark: "./icons/social-media/icon-instagram_dark.png",
-    },
-    {
-        id: 4,
         link: "mailto:imn.s901386@gmail.com",
         text: "imn.s901386@gmail.com",
         image_light: "./icons/social-media/icon-gmail_light.png",

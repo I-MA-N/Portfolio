@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
-import Logo_light from "/public/images/logos/logo_light.png";
-import Logo_dark from "/public/images/logos/logo_dark.png";
+import Logo_light from "../assets/logos/logo_light.png";
+import Logo_dark from "../assets/logos/logo_dark.png";
 import { ThemeContext } from "../App";
 
 function timeNow() {
