@@ -60,7 +60,7 @@ const skills = [
         "name": "react",
         "src": "./icons/react.png",
         "size": "100%",
-        "stars": 4
+        "stars": 5
     },
     {
         "id": 5,
@@ -85,10 +85,17 @@ const skills = [
     },
     {
         "id": 8,
-        "name": "blender",
-        "src": "./icons/blender.png",
-        "size": "90%",
-        "stars": 3
+        "name": "typescript",
+        "src": "./icons/typescript.png",
+        "size": "65%",
+        "stars": 4
+    },
+    {
+        "id": 9,
+        "name": "react-query",
+        "src": "./icons/react-query.png",
+        "size": "85%",
+        "stars": 4
     },
 ]
 
