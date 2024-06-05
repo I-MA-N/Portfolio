@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useRef } from "react";
 import Logo_light from "../assets/logos/logo_light.png";
 import Logo_dark from "../assets/logos/logo_dark.png";
 import { ThemeContext } from "../App";
@@ -13,14 +13,12 @@ function timeNow() {
 
 const Intro = () => {
    const [ isDark ] = useContext(ThemeContext);
+   const timeRef = useRef(null);
 
    useEffect(() => {
-
       const loadHandler = () => {
-         const timeElem = document.getElementById('time-elem');
          setInterval(() => {         
-            const time = timeNow();
-            timeElem.innerHTML = time;
+            timeRef.current.innerText = timeNow();
          }, 1000);
       }
 
@@ -86,7 +84,14 @@ const Intro = () => {
                      & solving problems. Up to
                      <span className="relative pl-2">
                         date
-                        <span className="absolute top-[90%] left-[58%] -translate-x-1/2 text-sm lg:text-lg text-slate-900 dark:text-slate-100" id="time-elem">00:00:00</span>
+                        <span
+                           ref={timeRef}
+                           className="absolute top-[90%] left-[58%] -translate-x-1/2 text-sm lg:text-lg text-slate-900 dark:text-slate-100"
+                        >
+                           {
+                              timeNow() ? timeNow() : '00:00:00'
+                           }
+                        </span>
                      </span>
                      , try to use new tools... <br />
                   </p>
