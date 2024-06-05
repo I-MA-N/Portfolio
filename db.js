@@ -97,6 +97,13 @@ const skills = [
         "size": "85%",
         "stars": 4
     },
+    {
+        "id": 10,
+        "name": "zustand",
+        "src": "./icons/zustand.png",
+        "size": "85%",
+        "stars": 4
+    },
 ]
 
 const projects = [
