@@ -16,17 +16,11 @@ const Intro = () => {
    const timeRef = useRef(null);
 
    useEffect(() => {
-      const loadHandler = () => {
-         setInterval(() => {         
-            timeRef.current.innerText = timeNow();
-         }, 1000);
-      }
+      const interval = setInterval(() => {
+         timeRef.current.innerText = timeNow();
+      }, 1000);
 
-      window.addEventListener('load', loadHandler);
-
-      return () => {
-         window.removeEventListener('load', loadHandler);
-      }
+      return () => clearInterval(interval);
    }, [])
 
 
