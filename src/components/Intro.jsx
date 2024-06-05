@@ -4,15 +4,15 @@ import Logo_dark from "../assets/logos/logo_dark.png";
 import { ThemeContext } from "../App";
 
 function timeNow() {
-   let  d = new Date(),
-      h = (d.getHours()<10?'0':'') + d.getHours(),
-      m = (d.getMinutes()<10?'0':'') + d.getMinutes(),
-      s = (d.getSeconds()<10?'0':'') + d.getSeconds();
+   let d = new Date(),
+      h = (d.getHours() < 10 ? '0' : '') + d.getHours(),
+      m = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes(),
+      s = (d.getSeconds() < 10 ? '0' : '') + d.getSeconds();
    return h + ':' + m + ':' + s;
 }
 
 const Intro = () => {
-   const [ isDark ] = useContext(ThemeContext);
+   const [isDark] = useContext(ThemeContext);
    const timeRef = useRef(null);
 
    useEffect(() => {
@@ -32,9 +32,9 @@ const Intro = () => {
                <div className="hidden md:flex flex-col items-center gap-y-4">
                   <div className="w-5 h-5 bg-intro rotate-45 shrink-0 rounded-md"></div>
                   <div className="w-2 bg-intro rounded-md shrink-0 top-line"></div>
-                  
+
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 shrink-0 text-intro/80 dark:text-intro/50">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                   </svg>
 
                   <div className="w-2 h-full bg-gradient-to-b from-intro to-skills rounded-md"></div>
@@ -47,8 +47,8 @@ const Intro = () => {
                      {/* Title */}
                      <h1 className="title set-hover">
                         Hi, I'm <span className="title-bold">Iman </span>
-                         <span className="text-[26px] lg:text-[42px]">a </span> 
-                         <span className="title-bold">Front End </span>
+                        <span className="text-[26px] lg:text-[42px]">a </span>
+                        <span className="title-bold">Front End </span>
                         Developer
                      </h1>
                      {/* Logo */}
@@ -56,9 +56,9 @@ const Intro = () => {
                         <img src={isDark ? Logo_light : Logo_dark} className="w-32 lg:w-40 cursor-pointer" />
                      </div>
                   </div>
-                  
+
                   <div className="separating-line"></div>
-                  
+
                   {/* Description */}
                   <p className="max-w-[800px] text-xl lg:text-3xl leading-[40px] lg:leading-[60px] -tracking-tight lg:-tracking-tight text-slate-900 dark:text-slate-100 text-center md:text-start">
                      Learn, practice,
@@ -66,7 +66,7 @@ const Intro = () => {
                         code
                         <span className="absolute bottom-full left-1/2 -translate-x-1/2 text-base lg:text-2xl text-slate-900 dark:text-slate-100">programming</span>
                      </span>
-                     . Like to gain experience & improve abilities. Dealing with 
+                     . Like to gain experience & improve abilities. Dealing with
                      <span className="relative px-2">
                         challenges
                         <span className="absolute top-[110%] lg:top-[90%] left-1/2 -translate-x-1/2 text-sm text-slate-900 dark:text-slate-100">
